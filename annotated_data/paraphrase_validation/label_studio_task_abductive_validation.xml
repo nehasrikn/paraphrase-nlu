@@ -1,0 +1,23 @@
+<View>
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em; border-radius: 5px; background-color: #ebe8ea;">
+	  <Text name="example" value="$paraphrase_example"/>
+  </View>
+  
+  <View style="box-shadow: 2px 2px 5px #999; padding: 20px; margin-top: 2em;border-radius: 5px;">
+    <Choices name="paraphrase_valid" toName="example" choice="single" showInLine="true">
+    	<View style="box-shadow: 2px 2px 5px #999; margin-top: 2em; border-radius: 5px; background-color: #d5f2da;">
+          <Choice value="valid"/>
+        </View>
+      <View style="box-shadow: 2px 2px 5px #999; margin-top: 2em; border-radius: 5px; background-color: #f2dcd5;">
+          <Choice value="invalid"/>
+        </View>
+    </Choices>
+    <Text name="instructions1" value="Edit hypothesis 1 minimally if need be:"/>
+    <TextArea name="paraphrase_edit_hyp1" toName="example" showSubmitButton="true" maxSubmissions="1" editable="true" required="false"/>
+    <Text name="instructions2" value="Edit hypothesis 2 minimally if need be:"/>
+    <TextArea name="paraphrase_edit_hyp2" toName="example" showSubmitButton="true" maxSubmissions="1" editable="true" required="false"/>
+  </View>
+  
+</View><!-- {
+  "data": {"paraphrase_example": "This is a great 3D movie that delivers everything almost right in your face."}
+} -->
