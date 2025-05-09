@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+.ipynb_checkpoints/
+*/hf_cache/
+*/hf-cache/
+pytorch_model.bin
+*.npy
+*af_scores.json
+*corpus_lookup.json
+*added_tokens.json
+*special_tokens_map.json
+*tokenizer_config.json
+*training_args.bin
+*spm.model
+*merges.txt
+*vocab.json
